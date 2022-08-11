@@ -2,9 +2,11 @@
 ## DevOps Roxsross
 
 Iniciando el contenedor de Ngnix:
+
 ![Iniciando...](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/tree/master/reto1/assets/images/cmd1-shell.png)
 
 Accediendo al contenedor desde el navegador local:
+
 ![Navegando](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/tree/master/reto1/assets/images/cmd2-localhost-8181.png) 
 
 Imagenes en el registro local de Docker:
