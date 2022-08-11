@@ -8,7 +8,7 @@ docker ps
 echo "Listo las imagenes disponibles (descargadas y/o construidas)"
 docker images
 echo "Antes de detener el contenedor, acceder al mismo = http://localhost:8181"
-read x
+read -p "Presione una tecla cuando haya comprobado" x
 echo "Detengo el contenedor de Nginx"
 docker stop servidor_web
 echo "Reviso la lista de contenedores en ejecucion"
