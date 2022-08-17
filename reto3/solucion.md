@@ -8,7 +8,7 @@
 
 ![MariaDB](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/blob/master/reto3/assets/images/reto3-part2.png)
 
-## Screenshot de imagen en Docker Hub de la imagen
+## Screenshot de la imagen en Docker Hub
 
 ![MariaDB](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/blob/master/reto3/assets/images/reto3-dockerhub.png)
 
