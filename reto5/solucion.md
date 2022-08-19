@@ -12,9 +12,9 @@ docker push danielsanti/hellolemoncoder:latest
 ```
 ## Imagen creada y tageada
 
-![DockerImageLocal](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/blob/master/reto4/assets/images/reto5-imagen_docker_creada.png)
+![DockerImageLocal](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/blob/master/reto5/assets/images/reto5-imagen_docker_creada.png)
 
 ## Enviar imagen al Docker Hub - Registry
 
-![PushImage](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/blob/master/reto4/assets/images/reto5-push_images_2_registry.png)
+![PushImage](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/blob/master/reto5/assets/images/reto5-push_images_2_registry.png)
 
