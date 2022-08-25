@@ -21,5 +21,5 @@ Como ultimo paso, se apaga el contenedor y se lo elimina:
 ![dockerDEL](https://github.com/daniels-blacknet/devops-roxsross-bootcamp-3-challenge/blob/master/reto7-bonus/assets/reto7-docker_delete.png)
 
 
-###FIN
+### FIN
 
