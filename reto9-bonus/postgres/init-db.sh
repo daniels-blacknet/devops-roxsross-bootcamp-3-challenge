@@ -2,7 +2,7 @@
 set -e
 
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
-    CREATE USER myapp;
+    CREATE USER myapp password myapp123;
     CREATE DATABASE myappdb;
     GRANT ALL PRIVILEGES ON DATABASE myappdb TO myapp;
 
