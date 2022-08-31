@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+
+  postgres:
+    image: postgres-myapp:0.0.6
+#    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+    ports:
+      - 5432:5432
+
+  myapp:
+    image: myapp:0.0.3
+#    restart: always
+    depends_on:
+      - postgres
+#    command: ["./wait-for-it.sh", "postgres:5432", "--", "python", "myapp.py"]
+    ports:
+      - 5000:5000
+    environment:
+      POSTGRES_DB: myappdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+#      POSTGRES_PASSWORD: mongodb://root:Aa123456@mongo:27017/
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: 5432
