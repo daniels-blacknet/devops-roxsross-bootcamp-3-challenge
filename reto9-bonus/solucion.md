@@ -44,8 +44,8 @@ services:
       - 5000:5000
     environment:
       POSTGRES_DB: myappdb
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password123
+      POSTGRES_USER: myapp
+      POSTGRES_PASSWORD: myapp123
       POSTGRES_HOST: postgres
       POSTGRES_PORT: 5432
 
