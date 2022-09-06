@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-var amqp = require("amqplib/callback_api");
-var mysql = require("mysql");
+var amqp = require('amqplib/callback_api');
+var mysql = require('mysql');
 
 var RABBITMQ_HOST = process.env.RABBITMQ_HOST || "localhost";
 var RABBITMQ_PORT = process.env.RABBITMQ_PORT || 5672;
@@ -23,6 +23,7 @@ console.log(
 var url = "amqp://" + RABBITMQ_HOST +":"+ RABBITMQ_PORT;
 amqp.connect(url, function(err, conn) {
   // this will fail if the queue is still not ready to accept consumers!
+  console.log("Traying connection to RabbitMQ...");
   conn.createChannel(
     function(err, ch) {
       if (err) throw err;

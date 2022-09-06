@@ -23,12 +23,14 @@ services:
       - hellodevops-net
     ports:
       - "5672:5762"
+#    depends_on:
+#      - db
   
   # hello-node application
   hello-node:
     build: ../hello-node
-    volumes: 
-      - ../hello-node:/opt/hello-node
+#    volumes: 
+#      - ../hello-node:/opt/hello-node
     networks:
       - hellodevops-net
     ports:
@@ -38,18 +40,24 @@ services:
       RABBITMQ_HOST: mq
       MYSQL_HOST: db
       MYSQL_PASSWORD: password
+    depends_on:
+      - db
+      - mq
+    command: ["./wait-for-it.sh", "mq:5672", "-t", "120", "-s", "--", "npm", "start"]
 
   # hello-python application
   hello-python:
     build: ../hello-python
-    volumes: 
-      - ../hello-python:/opt/hello-python
+#    volumes: 
+#      - ../hello-python:/opt/hello-python
     networks:
       - hellodevops-net
     ports:
       - "8080:8080"
     environment:
       RABBITMQ_HOST: mq
+    depends_on:
+      - mq
 
 networks:
   hellodevops-net:
