@@ -4,7 +4,8 @@
 
 Para ejecutar la solucion solo es necesario iniciar los contenedores con docker-compose:
 
-``` $ cd ./deployment
+``` 
+$ cd ./deployment
 $ docker-compose up -d
 ```
 
